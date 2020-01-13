@@ -8,7 +8,7 @@ Details of Directories and Files:
 
 (A) In the "./data" directory, there are three files with ".dat" extension.
 	(a) CS-SCORE_REFERENCE.dat : This file as the CS-Score values for all the possible tripeptides (8000 triplets). 
-								 These values are used for calculation of CS-Score for an input protein sequence
+					These values are used for calculation of CS-Score for an input protein sequence
 							 	 and its identification as natural or non-natural proteins.
 	(b) CSS-SCORE_REFERENCE.dat: This file as the CSS-Score values for all the possible tripeptides (8000 triplets) 
 								 with all available combinations of secondary structural triplets. These values are 
