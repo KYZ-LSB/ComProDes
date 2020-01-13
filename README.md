@@ -7,23 +7,24 @@ Kaushik, R. and Zhang K.Y. (2020). A Protein Sequence Fitness Function for Ident
 Details of Directories and Files:
 
 (A) In the "./data" directory, there are three files with ".dat" extension.
+
 	(a) CS-SCORE_REFERENCE.dat : This file as the CS-Score values for all the possible tripeptides (8000 triplets). 
-					These values are used for calculation of CS-Score for an input protein sequence
+				     These values are used for calculation of CS-Score for an input protein sequence
 							 	 and its identification as natural or non-natural proteins.
+								 
 	(b) CSS-SCORE_REFERENCE.dat: This file as the CSS-Score values for all the possible tripeptides (8000 triplets) 
-								 with all available combinations of secondary structural triplets. These values are 
-								 used for calculation of CSS-Score for an input protein sequence and its identification
-								 as natural or non-natural proteins.
-	(c) PER_RES_CUTOFFS.dat :	This file contains the information about percentage number of proteins in reference 
-								datasets scoring below a certain number residues scoring below the threshold values 
-								of CS- and CSS-Scores. These values are used in quantifying the extent of mimicking 
-								of an input protein as natural or non-natural protein.
+				     with all available combinations of secondary structural triplets. These values are 
+				     used for calculation of CSS-Score for an input protein sequence and its identification
+				     as natural or non-natural proteins.
+				     
+	(c) PER_RES_CUTOFFS.dat :    This file contains the information about percentage number of proteins in reference 
+				     datasets scoring below a certain number residues scoring below the threshold values 
+				     of CS- and CSS-Scores. These values are used in quantifying the extent of mimicking 
+ 				     of an input protein as natural or non-natural protein.
+				     
+				     
 (B) SEQUENCE_FITNESS.sh
-		This is main shell script which perform all the calculations required for implementing the purposed method for
-		identifying natural and non-natural proteins. The script is written in self-explanatory way and do not require any
-		expertise for understanding. Also, the script can be easily followed for developing its equivalents in other programming
-		or scripting language as per user's convenience. The script can be executed by providing the basename of input protein
-		sequence.
+This is main shell script which perform all the calculations required for implementing the purposed method for identifying natural and non-natural proteins. The script is written in self-explanatory way and do not require any expertise for understanding. Also, the script can be easily followed for developing its equivalents in other programming or scripting language as per user's convenience. The script can be executed by providing the basename of input protein sequence.
 		
 			INPUTS : Directory name of the input protein sequence (e.g. ABC), the directory should have the protein sequence 
                                  and corresponding secondary structure in fasta format (e.g. ABC.fasta) as shown below:
